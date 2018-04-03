@@ -22,3 +22,7 @@
   width: 300px;
   margin: 0 auto;
 }
+
+.App-selected {
+  margin-top: 20px;
+}

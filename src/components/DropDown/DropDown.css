@@ -1,21 +1,26 @@
 .DropDown {
-    width: 100%;
-    border: 1px orangered solid;
-    border-top: none;
+  width: 100%;
+  border: 1px orangered solid;
+  border-top: none;
 }
 
 .DropDown ul {
-    list-style-type: none;
-    text-align: left;
-    padding-left: 0;
-    margin: 0;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  margin: 0;
 }
 
 .DropDown ul li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .DropDown ul li:hover {
-    background-color: orangered;
-    color: black;
+  background-color: gray;
+  color: black;
+}
+
+.DropDown ul li.current {
+  background-color: orangered;
+  color: black;
 }
