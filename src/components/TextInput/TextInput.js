@@ -21,4 +21,10 @@ TextInput.propTypes = {
   onChange: PropTypes.func
 }
 
+TextInput.defaultProps = {
+  value: "",
+  placeholder: "",
+  onChange: (event) => console.log(event.target.value)
+}
+
 export default TextInput;

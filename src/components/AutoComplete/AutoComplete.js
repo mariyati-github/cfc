@@ -53,8 +53,12 @@ class AutoComplete extends React.Component {
 
 // Component should take 'options' as input and notify upon selection
 AutoComplete.propTypes = {
-  options: PropTypes.array,
+  options: PropTypes.arrayOf(PropTypes.shape({label: PropTypes.string, value: PropTypes.number})).isRequired,
   onSelect: PropTypes.func
+}
+
+AutoComplete.defaultProps = {
+  onSelect: (item) => console.log(item)
 }
 
 export default AutoComplete;

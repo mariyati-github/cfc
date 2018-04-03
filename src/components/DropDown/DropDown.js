@@ -70,9 +70,14 @@ class DropDown extends React.Component {
 }
 
 DropDown.propTypes = {
-  options: PropTypes.array,
+  options: PropTypes.arrayOf(PropTypes.shape({label: PropTypes.string, value: PropTypes.number})).isRequired,
   visible: PropTypes.bool,
   onSelect: PropTypes.func
+}
+
+DropDown.defaultProps = {
+  visible: true,
+  onSelect: (item) => console.log(item)
 }
 
 export default DropDown;
