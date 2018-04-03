@@ -22,7 +22,6 @@ TextInput.propTypes = {
 }
 
 TextInput.defaultProps = {
-  value: "",
   placeholder: "",
   onChange: (event) => console.log(event.target.value)
 }
